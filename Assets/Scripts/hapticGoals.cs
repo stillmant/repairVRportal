@@ -9,6 +9,7 @@ public class hapticGoals : MonoBehaviour
     public bool buzz2;
     public bool buzz3;
 
+    public GameObject lightHaptic;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,18 +28,21 @@ public class hapticGoals : MonoBehaviour
                 if(buzz1)
                 {
                     CorrectAnswer(other);
+                    lightHaptic.GetComponent<blinkLight>().done = true;
                 }
                 break;
             case "2buzz":
                 if(buzz2)
                 {
                     CorrectAnswer(other);
+                    lightHaptic.GetComponent<blinkLight>().done = true;
                 }
                 break;
             case "3buzz":
                 if(buzz3)
                 {
                     CorrectAnswer(other);
+                    lightHaptic.GetComponent<blinkLight>().done = true;
                 }
                 break;
             default:
