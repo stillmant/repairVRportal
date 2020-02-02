@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class batterDetector : MonoBehaviour
 {
+	public GameObject light;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class batterDetector : MonoBehaviour
 			other.transform.position = transform.position;
 			other.transform.rotation = transform.rotation;
 			other.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+			light.GetComponent<blinkLight>().done = true;
 			//Debug.Log("ENTERED");
 		}
 	}
