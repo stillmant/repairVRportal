@@ -19,7 +19,7 @@ public class hapticPuzzle : MonoBehaviour
         
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         switch(other.tag){
             case "1buzz":
