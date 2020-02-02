@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - battery
+  - 1buzz
+  - 2buzz
+  - 3buzz
   layers:
   - Default
   - TransparentFX
