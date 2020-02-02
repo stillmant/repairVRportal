@@ -3,31 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class countDown : MonoBehaviour
 {
-    /*
     public TextMeshProUGUI time;
-    private int totalTime = 180;
-    float subtract = 0;
-    private float timer;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        time.text = totalTime.ToString();   
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        timer -= Time.deltaTime;  
-        subtract = timer % 60;
-        time.text = (totalTime-subtract).ToString();  
-    }
-    */
-    public TextMeshProUGUI time;
-    public int duration = 180;
+    public int duration;
      public int timeRemaining;
      public bool isCountingDown = false;
      void Start()
@@ -45,6 +26,7 @@ public class countDown : MonoBehaviour
              Invoke ( "tick", 1f );
          } else {
              isCountingDown = false;
+             SceneManager.LoadScene("loseEnding");
          }
      }
      void Update()

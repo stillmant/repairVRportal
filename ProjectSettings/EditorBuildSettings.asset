@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/intro.unity
     guid: c534e7cf0b10d0a4fa60b3ce5bef6db0
-  - enabled: 0
-    path: Assets/Scenes/theresa.unity
-    guid: b18ad5eb6a95dcd4e97c38229439d438
   - enabled: 1
     path: Assets/Scenes/slots.unity
     guid: 4a62587eab07e4d4ea8e9f40b23540d9
+  - enabled: 1
+    path: Assets/Scenes/loseEnding.unity
+    guid: ac9fb9fbfb9adc74b91dbed88143ea94
+  - enabled: 1
+    path: Assets/Scenes/winEnding.unity
+    guid: c9a752b3617a4604b956409698b8b5cc
   m_configObjects: {}
