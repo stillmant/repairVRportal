@@ -31,6 +31,9 @@ public class hapticPuzzle : MonoBehaviour
             case "3buzz":
                 StartCoroutine(buzzThree());
                 break;
+            case "battery":
+                OVRInput.SetControllerVibration (1, 1, m_controller);
+                break;
             default:
                 break;
         }

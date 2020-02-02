@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/main.unity
     guid: c534e7cf0b10d0a4fa60b3ce5bef6db0
   - enabled: 0
     path: Assets/Scenes/theresa.unity
     guid: b18ad5eb6a95dcd4e97c38229439d438
+  - enabled: 1
+    path: Assets/Scenes/slots.unity
+    guid: 4a62587eab07e4d4ea8e9f40b23540d9
   m_configObjects: {}
